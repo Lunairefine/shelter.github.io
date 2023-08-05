@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Shelter Gate</title>
+</head>
+<body>
+    <div>
+        <h1>SHELTER</h1>
+        <p id="headline">Because i give them Shelter.</p>
+        <script src="script.js"></script>
+    </div>
+    <div class="passkey">
+        <form id="myForm" class="formstyle">
+            <input type="password" id="kataKunci" name="kataKunci" autocomplete="off" data-kataKunci="zero" required>
+        </form> 
+        <script>
+                function redirectToPage() {
+                    const kataKunci = document.getElementById ('kataKunci').value;
+                    const inputElement = document.getElementById('kataKunci');
+                    const kataKunciHash = inputElement.getAttribute('data-kataKunci');
+    
+    
+                    if ( kataKunci === kataKunciHash ) {
+                        window.location.href = '/dashboard/dashboard.html';
+                     }
+                }
+                document.getElementById('kataKunci').addEventListener('input', redirectToPage);
+        </script>
+    </div>     
+</body>
+</html>

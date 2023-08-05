@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 280px;
+    font-size: 60px;
+    margin-bottom: 1px;
+    font-family: Galaxy;
+}
+
+p {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-family: inter;
+}
+
+@font-face {
+    font-family: "Galaxy";
+    font-style: normal;
+    font-weight: 50;
+    font-display: block;
+    src: url(https://galxestatic.com/w/s/1b47ad3/fonts/galaxy.a33a70b.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://galxestatic.com/w/s/1b47ad3/fonts/inter-regular.2391725.ttf) format("truetype")
+}
+
+input { 
+    border: none;
+    outline: none;
+    height: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.formstyle {
+    text-align: center;
+    padding: 5px 10px;
+}
